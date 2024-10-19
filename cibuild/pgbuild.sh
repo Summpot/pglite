@@ -153,7 +153,7 @@ END
     # for zic and emsdk-shared/wasi-shared called from makefile
     export PATH=$(pwd)/bin:$PATH
 
-    EMCC_NODE="-sEXIT_RUNTIME=1 -DEXIT_RUNTIME -sNODERAWFS -sENVIRONMENT=node"
+    EMCC_NODE="-sNODERAWFS -sENVIRONMENT=node"
 
     # -lwebsocket.js"
     # -sWEBSOCKET_SUBPROTOCOL=binary -sWEBSOCKET_URL=ws://127.0.0.1:25432"
