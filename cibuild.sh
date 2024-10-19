@@ -73,6 +73,7 @@ System node/pnpm ( may interfer) :
 if ${WASI:-false}
 then
     echo "Wasi build (experimental)"
+    . /opt/python-wasm-sdk/wasm32-bi-emscripten-shell.sh
     . /opt/python-wasm-sdk/wasisdk/wasisdk_env.sh
 
 else
