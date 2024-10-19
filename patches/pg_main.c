@@ -1149,7 +1149,9 @@ void main_post() {
          */
         unsetenv("LC_ALL");
 }
+__attribute__((__weak__))
 EMSCRIPTEN_KEEPALIVE void __cxa_throw(void *thrown_exception, void *tinfo, void *dest);
+__attribute__((__weak__))
 EMSCRIPTEN_KEEPALIVE void
 __cxa_throw(void *thrown_exception, void *tinfo, void *dest) {}
 
