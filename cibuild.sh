@@ -20,7 +20,7 @@ export PGDATA=${PGROOT}/base
 export PGUSER=${PGUSER:-postgres}
 export PGPATCH=${WORKSPACE}/patches
 export TOTAL_MEMORY=${TOTAL_MEMORY:-128MB}
-export WASI=${WASI:-false}
+export WASI=${WASI:-true}
 
 
 # exit on error
