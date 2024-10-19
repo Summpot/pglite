@@ -45,6 +45,11 @@ jobs:
             postgresql-*
           key: build-cache-${{ hashFiles('.buildconfig', 'cibuild.sh', '.github/workflows/build_wasm_postgres.yml', 'package.json', 'cibuild/**', 'patches/*.c', 'patches/*.h', 'patches/**/*.diff') }}
 
+      - name: Setup emsdk
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: latest-upstream
+      
       - name: Install python-wasm-sdk for emsdk/wasi+prebuilts
         if: steps.cache-restore.outputs.cache-hit != 'true'
         working-directory: /
